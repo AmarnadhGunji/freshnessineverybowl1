@@ -1,0 +1,753 @@
+
+
+.register-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 8% 15%,
+      rgba(255, 152, 0, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 92% 85%,
+      rgba(46, 125, 50, 0.12),
+      transparent 30%
+    ),
+    #fffdf7;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.register-container {
+  width: 100%;
+  max-width: 1100px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  border: 1px solid #f1eee5;
+
+  box-shadow:
+    0 25px 65px rgba(38, 50, 56, 0.12);
+}
+
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.register-left {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 55px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e8f5e9 0%,
+      #f4fbf3 55%,
+      #fff8e8 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+.register-left::before {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 152, 0, 0.11);
+
+  top: -100px;
+  left: -90px;
+}
+
+
+.register-left::after {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(46, 125, 50, 0.10);
+
+  bottom: -75px;
+  right: -55px;
+}
+
+
+/* ================================
+   BRAND
+================================ */
+
+.register-brand {
+  position: relative;
+  z-index: 2;
+
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  font-size: 38px;
+
+  box-shadow:
+    0 12px 30px rgba(46, 125, 50, 0.12);
+
+  animation:
+    registerFruitFloat 3s ease-in-out infinite;
+}
+
+
+/* ================================
+   LEFT TITLE
+================================ */
+
+.register-left h1 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 18px;
+
+  color: #263238;
+
+  font-size: 40px;
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+.register-left > p {
+  position: relative;
+  z-index: 2;
+
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.register-features {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+
+.register-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  padding: 10px 15px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255, 255, 255, 0.82);
+
+  border: 1px solid rgba(46, 125, 50, 0.10);
+
+  box-shadow:
+    0 6px 18px rgba(38, 50, 56, 0.05);
+}
+
+
+.register-feature span {
+  font-size: 21px;
+}
+
+
+.register-feature p {
+  margin: 0;
+
+  color: #455a64;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   RIGHT CARD
+================================ */
+
+.register-card {
+  padding: 45px 55px;
+
+  background: #ffffff;
+}
+
+
+/* ================================
+   TITLE
+================================ */
+
+.register-card h2 {
+  margin: 0;
+
+  color: #263238;
+
+  font-size: 32px;
+
+  font-weight: 800;
+}
+
+
+.register-subtitle {
+  margin: 8px 0 22px;
+
+  color: #78909c;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   ERROR / SUCCESS
+================================ */
+
+.register-error,
+.register-success {
+  padding: 12px 14px;
+
+  margin-bottom: 17px;
+
+  border-radius: 11px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.register-error {
+  color: #b71c1c;
+
+  background: #ffebee;
+
+  border: 1px solid #ffcdd2;
+}
+
+
+.register-success {
+  color: #1b5e20;
+
+  background: #e8f5e9;
+
+  border: 1px solid #c8e6c9;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.register-form-group {
+  margin-bottom: 16px;
+}
+
+
+.register-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #37474f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.register-form-group input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border-radius: 11px;
+
+  border: 1px solid #dfe5df;
+
+  background: #fbfcfa;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.register-form-group input::placeholder {
+  color: #a0adb3;
+}
+
+
+.register-form-group input:hover {
+  border-color: #b8cdb9;
+}
+
+
+.register-form-group input:focus {
+  background: #ffffff;
+
+  border-color: #2e7d32;
+
+  box-shadow:
+    0 0 0 4px rgba(46, 125, 50, 0.10);
+}
+
+
+/* Disabled email after verification */
+
+.register-form-group input:disabled {
+  background: #f1f8f2;
+
+  color: #4f6f52;
+
+  border-color: #b8d7ba;
+
+  cursor: not-allowed;
+}
+
+
+/* ================================
+   OTP EMAIL ROW
+================================ */
+
+.otp-email-row {
+  display: flex;
+
+  gap: 8px;
+
+  align-items: stretch;
+}
+
+
+.otp-email-row input {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* ================================
+   OTP VERIFY ROW
+================================ */
+
+.otp-verify-row {
+  display: flex;
+
+  gap: 8px;
+
+  align-items: stretch;
+}
+
+
+.otp-verify-row input {
+  flex: 1;
+
+  min-width: 0;
+
+  letter-spacing: 3px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   OTP BUTTON
+================================ */
+
+.otp-button {
+  flex-shrink: 0;
+
+  min-width: 110px;
+
+  padding: 0 14px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff9800,
+      #fb8c00
+    );
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 16px rgba(255, 152, 0, 0.20);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.otp-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 20px rgba(255, 152, 0, 0.26);
+}
+
+
+.otp-button:active {
+  transform: translateY(0);
+}
+
+
+.otp-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* ================================
+   VERIFIED MESSAGE
+================================ */
+
+.email-verified {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 8px;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #e8f5e9;
+
+  border: 1px solid #c8e6c9;
+
+  color: #2e7d32;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* ================================
+   PASSWORD HINT
+================================ */
+
+.password-hint {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #90a4ae;
+
+  font-size: 11px;
+}
+
+
+/* ================================
+   REGISTER BUTTON
+================================ */
+
+.register-button {
+  width: 100%;
+
+  margin-top: 6px;
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2e7d32,
+      #43a047
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 9px 20px rgba(46, 125, 50, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.register-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 13px 25px rgba(46, 125, 50, 0.28);
+}
+
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+
+.register-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+
+/* ================================
+   LOGIN LINK
+================================ */
+
+.login-text {
+  margin: 19px 0 0;
+
+  text-align: center;
+
+  color: #78909c;
+
+  font-size: 13px;
+}
+
+
+.login-text a {
+  color: #2e7d32;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.login-text a:hover {
+  color: #ff9800;
+
+  text-decoration: underline;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes registerFruitFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .register-container {
+    grid-template-columns: 1fr;
+
+    max-width: 620px;
+  }
+
+  .register-left {
+    padding: 40px;
+  }
+
+  .register-left h1 {
+    font-size: 34px;
+  }
+
+  .register-features {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  }
+
+  .register-card {
+    padding: 40px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 560px) {
+
+  .register-page {
+    padding: 18px 10px;
+  }
+
+  .register-container {
+    border-radius: 20px;
+  }
+
+  .register-left {
+    padding: 32px 24px;
+  }
+
+  .register-brand {
+    width: 60px;
+    height: 60px;
+
+    font-size: 30px;
+  }
+
+  .register-left h1 {
+    font-size: 29px;
+  }
+
+  .register-left > p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .register-features {
+    gap: 7px;
+  }
+
+  .register-feature {
+    padding: 8px 11px;
+  }
+
+  .register-card {
+    padding: 32px 22px;
+  }
+
+  .register-card h2 {
+    font-size: 27px;
+  }
+
+  .otp-email-row,
+  .otp-verify-row {
+    flex-direction: column;
+  }
+
+  .otp-button {
+    width: 100%;
+
+    min-height: 44px;
+  }
+}

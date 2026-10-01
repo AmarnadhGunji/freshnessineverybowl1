@@ -1,0 +1,138 @@
+
+.place-order-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(
+    135deg,
+    #f3fff7,
+    #ffffff
+  );
+}
+
+.place-order-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.place-order-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.place-order-header h1 {
+  margin-bottom: 10px;
+  color: #1f3d2b;
+}
+
+.place-order-header p {
+  color: #6b756e;
+}
+
+.place-order-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.place-order-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.place-order-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #234b32;
+}
+
+.order-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-detail-row:last-child {
+  border-bottom: none;
+}
+
+.order-detail-row span {
+  color: #666666;
+}
+
+.order-detail-row strong {
+  color: #1f3d2b;
+}
+
+.place-order-card p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+.delivery-info {
+  margin-top: 15px;
+}
+
+.delivery-info strong {
+  margin-left: 6px;
+  color: #248044;
+}
+
+.place-order-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.place-order-button,
+.back-payment-button {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-button {
+  background: #218838;
+  color: white;
+}
+
+.place-order-button:hover {
+  background: #176b2b;
+  transform: translateY(-2px);
+}
+
+.back-payment-button {
+  background: #eeeeee;
+  color: #333333;
+}
+
+.back-payment-button:hover {
+  background: #dddddd;
+}
+
+@media (max-width: 600px) {
+  .place-order-page {
+    padding: 25px 15px;
+  }
+
+  .place-order-card {
+    padding: 20px;
+  }
+
+  .place-order-actions {
+    flex-direction: column;
+  }
+
+  .order-detail-row {
+    gap: 15px;
+  }
+}
+
